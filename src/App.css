@@ -1,0 +1,97 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.search-section
+{
+  display: flex;
+  justify-content: center;
+}
+.search-section input
+{
+  width: 300px;
+  height: 40px;
+  border: 0.5px #000 solid;
+  outline: none;
+  font-size: 17px;
+  padding: 5px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.search-section button
+{
+  width: 100px;
+  border: none;
+  background-color: rgb(119, 166, 211);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.title
+{
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.result
+{
+  display: grid;
+  padding: 90px;
+  grid-template-columns: auto auto auto;
+}
+
+.result .card
+{
+  display: flex;
+}
+.card > a > span > .resultImage
+{
+  flex: 100% 1;
+  margin-top: 1rem;
+  border-radius: 20px;
+  width: 350px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card > a > .username {
+  text-align: center;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:501px) {
+  .title
+  {
+    font-size: 27px;
+  }
+  .search-section input 
+  {
+    width: 50%;
+    font-size: 15px;
+  }
+  .search-section button 
+  {
+    font-size: 15px;
+  }
+  .result
+  {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0;
+  }
+  .card > a > span > .resultImage 
+  {
+    width: 93%;
+  }
+}
